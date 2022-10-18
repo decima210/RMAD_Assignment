@@ -17,8 +17,9 @@ const objectArray = [
     age: 10,
   },
   {
-    name: 'Melissa',
     age: 8,
+    name: 'Melissa',
+    address: 'Ragama',
   },
   {
     name: 'Madhura',
@@ -27,23 +28,21 @@ const objectArray = [
 ];
 
 const SampleJson = () => {
-  const [counter, setCounter] = useState(0);
-
   useEffect(() => {
     console.log('Print numberArray', numberArray);
     console.log('Print stringArray', stringArray);
     console.log('Print objectArray', objectArray);
+    console.log('String Array Element 0', objectArray[0]);
+    console.log('String array Element 1', objectArray[1]);
+    console.log('String Array Element 2', objectArray[2].age);
   }, []);
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>This is home Functional component</Text>
-      <Text style={styles.title}>{'count is ${counter}'} </Text>
-
-      <TouchableOpacity
-        onPress={() => setCounter(counter + 1)}
-        style={styles.btn}>
-        <Text style={styles.title}>Add +1 to count</Text>
-      </TouchableOpacity>
+      <Text style={styles.title}>Array types and examples</Text>
+      <Text style={styles.label}>Number Array</Text>
+      <Text style={styles.label}>String Array</Text>
+      <Text style={styles.label}>Object Array</Text>
     </View>
   );
 };
@@ -63,3 +62,5 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
 });
+
+export default SampleJson;
