@@ -7,6 +7,7 @@ const reactJson = {
   age: 25,
   address: 'Galle',
   isAdullt: true,
+  food: ['rice', 'curry', 'fish'],
 };
 
 const numberArray = [1, 2, 3, 4];
@@ -35,6 +36,7 @@ const SampleJson = () => {
     console.log('String Array Element 0', objectArray[0]);
     console.log('String array Element 1', objectArray[1]);
     console.log('String Array Element 2', objectArray[2].age);
+    console.log('Print reactJson', reactJson.food[1]);
   }, []);
 
   return (
