@@ -16,7 +16,9 @@ export default class CodePractice extends Component {
     return (
       <View style={styles.abc}>
         <Text> Count: {this.state.counter} </Text>
-        <TouchableOpacity onPress={this.onButtonPress()} style={styles.btn}>
+        <TouchableOpacity
+          onPress={() => this.onButtonPress()}
+          style={styles.btn}>
           <Text style={styles.btnTitle}> + Button</Text>
         </TouchableOpacity>
       </View>
