@@ -12,10 +12,8 @@ export default class CodePractice extends Component {
   render() {
     return (
       <View style={styles.abc}>
-        <SafeAreaView>
-          <Text> {this.state.counter}</Text>
-          <TouchableOpacity style={styles.btn} />
-        </SafeAreaView>
+        <Text> {this.state.counter}</Text>
+        <TouchableOpacity style={styles.btn} />
       </View>
     );
   }
