@@ -1,4 +1,4 @@
-import StyleSheet from 'react';
+import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   abc: {
@@ -12,10 +12,14 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   btn: {
-    backgroundColor: '#227756',
-    padding: 10,
+    backgroundColor: '#22ccff',
+    padding: 50,
     margin: 10,
     borderRadius: 5,
+  },
+  btnTitle: {
+    fontSize: 26,
+    color: '#000000',
   },
 });
 export default styles;
