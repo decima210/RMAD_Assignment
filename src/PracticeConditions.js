@@ -1,18 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {SafeAreaView, Text} from 'react-native';
 
-export default class PracticeConditions extends Component {
-  constructor() {
-    super();
-    this.state = {
-      counter: 10,
-    };
+const PracticeConditions = () => {
+  const counter = 100;
+  if (counter > 75) {
+    counter = counter + 1;
   }
-  render() {
-    return (
-      <SafeAreaView>
-        <Text>{this.state.counter}</Text>
-      </SafeAreaView>
-    );
-  }
-}
+  return (
+    <SafeAreaView>
+      <Text>counter:{counter}</Text>
+    </SafeAreaView>
+  );
+};
+export default PracticeConditions;
