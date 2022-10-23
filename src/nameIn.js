@@ -1,16 +1,19 @@
 import {useState} from 'react';
-import {StyleSheet, Text} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 
-export default function nameIn() {
+export default function NameIn({navigation}) {
   // eslint-disable-next-line no-unused-vars, react-hooks/rules-of-hooks
   const [name, setName] = useState('Shaun');
 
   return (
-    <view style={Styles.container}>
+    <View style={Styles.container}>
       <Text> Enter Name:</Text>
       <Text>Name:{name}</Text>
-    </view>
+      <TouchableOpacity onPress={() => navigation.navigate('Home2')}>
+        <Text>Hello World</Text>
+      </TouchableOpacity>
+    </View>
   );
 }
 const Styles = StyleSheet.create({

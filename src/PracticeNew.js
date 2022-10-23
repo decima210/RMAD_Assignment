@@ -73,7 +73,6 @@ class PracticeNew extends Component {
     );
   }
 }
-export default PracticeNew;
 
 const styles = StyleSheet.create({
   container: {
@@ -119,3 +118,4 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
 });
+export default PracticeNew;
