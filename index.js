@@ -4,6 +4,6 @@
 
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
-import PracticeConditions from './src/PracticeConditions';
+import CodePractice from './src/CodePractice';
 
-AppRegistry.registerComponent(appName, () => PracticeConditions);
+AppRegistry.registerComponent(appName, () => CodePractice);
