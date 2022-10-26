@@ -1,15 +1,23 @@
-import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import React, {useState} from 'react';
+import {SafeAreaView, Text, Button} from 'react-native';
 
-const PracticeConditions = () => {
-  const counter = 100;
-  if (counter > 75) {
-    counter = counter + 1;
-  }
+export default function PracticeConditions() {
+  const [name, setName] = useState('Apple');
+  const [number, setNumber] = useState(10);
+  const clickHandler = () => {
+    if (number > 75) {
+      setName('A');
+    } else if (number > 50) {
+      setName('B');
+    } else {
+      setName('Fail');
+    }
+  };
+
   return (
     <SafeAreaView>
-      <Text>counter:{counter}</Text>
+      <Text> Result is: {name}</Text>
+      <Button title="Update Number" onPress={clickHandler} />
     </SafeAreaView>
   );
-};
-export default PracticeConditions;
+}
