@@ -1,11 +1,11 @@
 import {StyleSheet} from 'react-native';
-import styles from './FinalProjStyles';
+// import globalStyles from './styles/global';
 
 const styles = StyleSheet.create({
   abc: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'left',
+    alignItems: 'left',
   },
   title: {
     fontsize: 20,
@@ -21,6 +21,16 @@ const styles = StyleSheet.create({
   btnTitle: {
     fontSize: 26,
     color: '#000000',
+  },
+  txtInputStyle: {
+    height: 35,
+    width: 300,
+    fontSize: 20,
+    color: '#000000',
+    padding: 10,
+    margin: 10,
+    borderWidth: 2,
+    borderRadius: 5,
   },
 });
 export default styles;
