@@ -53,5 +53,19 @@ const styles = StyleSheet.create({
     fontSize: 25,
     color: '#000000',
   },
+  fixToText: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  btn2: {
+    backgroundColor: '#ffffff',
+    padding: 8,
+    margin: 10,
+    borderRadius: 20,
+    borderColor: '#000000',
+    borderWidth: 5,
+    fontSize: 26,
+    color: '#000000',
+  },
 });
 export default styles;

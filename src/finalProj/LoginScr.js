@@ -5,6 +5,9 @@ import {
   Image,
   TouchableOpacity,
   TextInput,
+  Button,
+  View,
+  Alert,
 } from 'react-native';
 import styles from './FinalProjStyles';
 import img1 from './Pictures/2.jpg';
@@ -32,12 +35,30 @@ export default function LoginScr() {
         onChangeText={newText => setPassword(password)}
         defaultValue={password}
       />
-      <TouchableOpacity onPress={() => this.onButtonPress()} style={styles.btn}>
-        <Text style={styles.btnTitle}> Login</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => this.onButtonPress()} style={styles.btn}>
-        <Text style={styles.btnTitle}> Cancel</Text>
-      </TouchableOpacity>
+      <View style={styles.fixToText}>
+        <TouchableOpacity
+          onPress={() => this.onButtonPress()}
+          style={styles.btn}>
+          <Text style={styles.btnTitle}> Login</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => this.onButtonPress()}
+          style={styles.btn}>
+          <Text style={styles.btnTitle}> Cancel</Text>
+        </TouchableOpacity>
+      </View>
+      <View style={styles.fixToText}>
+        <Button
+          style={styles.btn}
+          title="Left button"
+          onPress={() => Alert.alert('Left button pressed')}
+        />
+        <Button
+          style={styles.btn}
+          title="Right button"
+          onPress={() => Alert.alert('Right button pressed')}
+        />
+      </View>
     </SafeAreaView>
   );
 }
