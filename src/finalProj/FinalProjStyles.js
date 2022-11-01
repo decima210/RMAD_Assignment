@@ -8,15 +8,18 @@ const styles = StyleSheet.create({
     alignItems: 'left',
   },
   title: {
-    fontsize: 20,
-    color: '#227756',
+    fontSize: 60,
+    color: '#0044cc',
     padding: 10,
+    alignSelf: 'center',
   },
   btn: {
-    backgroundColor: '#22ccff',
-    padding: 50,
+    backgroundColor: '#ffffff',
+    padding: 8,
     margin: 10,
-    borderRadius: 5,
+    borderRadius: 20,
+    borderColor: '#000000',
+    borderWidth: 5,
   },
   btnTitle: {
     fontSize: 26,
@@ -25,12 +28,30 @@ const styles = StyleSheet.create({
   txtInputStyle: {
     height: 35,
     width: 300,
-    fontSize: 20,
+    fontSize: 15,
     color: '#000000',
     padding: 10,
     margin: 10,
     borderWidth: 2,
     borderRadius: 5,
+  },
+  img: {
+    height: 200,
+    width: 200,
+    alignSelf: 'center',
+  },
+  h1: {
+    fontSize: 30,
+    fontFamily: 'sans-serif',
+    color: '#000000',
+    padding: 1,
+    alignSelf: 'center',
+    fontWeight: 'bold',
+  },
+  txtGeneral: {
+    fontFamily: 'Times new roman',
+    fontSize: 25,
+    color: '#000000',
   },
 });
 export default styles;
