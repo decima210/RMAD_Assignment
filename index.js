@@ -4,6 +4,6 @@
 
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
-import ExistingPassengerScr from './src/finalProj/ExistingPassengerScr';
+import LinksScreen from './src/finalProj/LinksScreen';
 
-AppRegistry.registerComponent(appName, () => ExistingPassengerScr);
+AppRegistry.registerComponent(appName, () => LinksScreen);
