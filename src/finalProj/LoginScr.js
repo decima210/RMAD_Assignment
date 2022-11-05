@@ -9,7 +9,7 @@ import {
   View,
   Alert,
 } from 'react-native';
-import styles from './FinalProjStyles';
+import styles from './styles/FinalProjStyles';
 import img1 from './Pictures/2.jpg';
 
 export default function LoginScr() {

@@ -67,5 +67,12 @@ const styles = StyleSheet.create({
     fontSize: 26,
     color: '#000000',
   },
+  txtTopic: {
+    fontFamily: 'Times new roman',
+    fontSize: 25,
+    color: '#0000ff',
+    alignSelf: 'center',
+    fontWeight: 'bold',
+  },
 });
 export default styles;
